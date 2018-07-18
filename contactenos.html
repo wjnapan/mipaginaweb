@@ -1,0 +1,193 @@
+ <!DOCTYPE html>
+<html lang="es">
+<meta charset="utf-8">
+<head>
+	<title>.:Tienda Online:.</title>
+	<link rel="shurcut icon" href="images/icono4.png">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/lightbox.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top"> <!--navbar-fixed-top para que el menu lo sigue-->
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+              </button>
+            </div>
+
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-left">
+                <li class=""><a href="index.html">Inicio</a></li>
+                <li class=""><a href="quienes somos.html">Quienes Somos</a></li>
+              	<li class=""><a href="ofertas.html">Ofertas</a></li>
+             	<li class="dropdown">
+             	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Temporada <span class="caret"></span></a>
+             	<!-- Menu con nivel -->
+                <ul class="dropdown-menu">
+                    <li><a href="#"></a></li>
+                    <li><a href="temporadapv.html">Primavera - Verano</a></li>
+                    <li><a href="teamporadaoi.html">Otoño - Invierno</a></li>
+                    <!-- Separador -->
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Descuentos</li>
+                    <!-- Fin de separador -->
+                  <li><a href="marcas.html">Por Marcas</a></li>
+                </ul>
+              </li>
+              <!-- Cierre de menu con nivel -->
+              <li class=""><a href="contactenos.html">Contactenos</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://www.facebook.com/tiendaonline" target="_blank"> 
+                <i class="fa fa-facebook fa-fw " aria-hidden="true"></i></a></li> 
+                <li><a href="http://www.twitter.com/tiendaonline" target="_blank"> 
+                <i class="fa fa-twitter fa-fw " aria-hidden="true"></i></a></li> 
+                <li><a href="http://www.instagram.com/tiendaonline" target="_blank"> 
+                <i class="fa fa-instagram fa-fw " aria-hidden="true"></i></a></li> 
+                <li><a href="http://www.youtube.com/tiendaonline" target="_blank"> 
+                <i class="fa fa-youtube fa-fw " aria-hidden="true"></i></a></li> 
+                <!-- fa fa-user es ara que cambia el icon   -->
+                <!-- Tamñano fa-3x de 2 a 5x -->
+                <!-- fw es para la separacion de icons -->
+              </ul>
+            </div>
+          </div>
+</nav>	
+<br>
+<br>
+<!-- PARA LA IMAGEN DE PORTADA e.e down  -->
+  <section class="">
+    <section id="slider" class="carousel slide" data-ride="carousel">
+      <section class="carousel-inner"> 
+        <div class="item">
+          <img src="images/slider01.jpg" class="img-responsive d-block w-100">      
+        </div>
+        <div class="item active">
+          <img src="images/slider02.jpg" class="img-responsive d-block w-100">      
+        </div>
+        <div class="item">
+          <img src="images/slider03.jpg" class="img-responsive d-block w-100">      
+        </div>
+      </section>
+      <a href="#slider" class="left carousel-control" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      </a>
+       <a href="#slider" class="right carousel-control" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      </a>
+    </section>
+                          
+  </section>
+	<main class="container">
+		<section>
+			<header><h2>contactenos</h2></header>
+			<hr class="featurette-divider">
+		</section>
+    <!-- CREANDO UNA NUEVA FILA para los subtitulos :v -->
+    <section class="row">
+      Estimado usuario para solicitar informacion llenar el formulario.Gracias
+      <section class="col-md-6">
+        <form>
+          <div class="form-group has-success has-feedback">
+            <label class="control-label">Apellidos</label>
+            <input type="text" id="apellidos" class="form-control" placeholder="Ingrese Apellido">
+            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+          </div>
+          <div class="form-group">
+            <label class="control-label">Nombres</label>
+            <input type="text" id="nombres" class="form-control" placeholder="Ingrese Nombres">
+          </div>
+          <div class="form-group">
+            <label class="control-label">Dni</label>
+            <input type="text" id="Dni" class="form-control" placeholder="Ingrese Dni" maxlength="8">
+          </div>
+          
+          <div class="form-group">
+            <label class="control-label">Url</label>
+            <input type="url" id="url" class="form-control" placeholder="http://" required  >
+          </div>
+
+          <div class="form-group">
+            <label class="control-label">Correo</label>
+            <input type="email" id="correo" class="form-control" placeholder="webmaster@gmail.com" required>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label">Passowrd</label>
+            <input type="password" id="password" class="form-control" placeholder="Ingrese password">
+          </div>
+
+          <div class="form-group">
+            <label class="control-label">Edad</label>
+            <input type="number" id="edad" class="form-control" placeholder="Ingrese Edad" min="0" max="110">
+          </div>
+
+          <div class="form-group">
+            <label class="control-label">Fecha de Nac.:</label>
+            <input type="date" id="fechanac" class="form-control" >
+          </div>
+
+          <div class="form-group">
+            <label class="control-label">Estado Civil.:</label>
+            <select id="civil" class="form-control">
+              <option value="">[SELECCIONAR]</option>
+              <option value="1">Soltero</option>
+              <option value="2">Casado</option>
+              <option value="3">Viudo</option>
+              <option value="">Divorciado</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label">Hora:</label>
+            <input type="time" id="hora" class="form-control" >
+          </div>
+
+          <div class="form-group">
+            <label class="control-label">Idiomas que habla</label>
+            <input type="checkbox" id="i1">Ingles
+            <input type="checkbox" id="i1">Frances
+            <input type="checkbox" id="i1">Italiano
+          </div>
+
+          <div class="form-group">
+            <label class="control-label">Sexo</label><br>
+            <input type="radio" id="s1" name="sexo">Hombre
+            <input type="radio" id="s2" name="sexo">Mujer
+          </div>
+
+          <div class="form-group">
+            <label class="control-label">Adjuntar Archivos</label>
+            <input type="file" id="file" class="form-control">
+          </div>
+          <div class="form-group has-success">
+            <label class="control-label">Comentario</label>
+            <textarea class="form-control" style="resize: none" placeholder="Ingrese Comentario"> </textarea>
+          </div>
+
+          <input type="submit" name="enviar" value="Enviar" class="btn btn-info">
+
+
+        </form>
+      </section>
+      <section class="col-md-6">
+        Mapa
+      </section>
+    </section>
+	</main>
+  <br><br>
+	<footer class="container-fluid">
+		Todos los derechos reservados.
+	</footer>
+</body>
+<!-- ctrl+ } para comentario -->
+<!-- Direccionando el jquery para bootstrap -->
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</html>
